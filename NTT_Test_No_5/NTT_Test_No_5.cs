@@ -11,22 +11,21 @@ public class NTT_Test_No_5
 {
     static void Main(string[] args)
     {
-        int[] dataArray = new int[] { 3, 1, 2, 4, 3 };
-        //int[] dataArray = new int[] { 2, 5, 3, 6 };
+        int[] numberEntered = new int[] { 3, 1, 2, 4, 3 };
 
-        int result = functionSelisih(dataArray);
+        int numberEnteredResult = functionSelisih(numberEntered);
 
-        Console.WriteLine(result);
+        Console.WriteLine(numberEnteredResult);
     }
 
-    public static int functionSelisih(int[] dataArray)
+    public static int functionSelisih(int[] numberEntered)
     {
         try
         {
-            int[] dataDifferenceArray = new int[] { };
-            List<int> dataResult = new List<int>();
+            List<int> numberEnteredResult = new List<int>();
+            int[] convertedNumberEnteredResult = new int[] { };
 
-            for (int start = 0; start < dataArray.Length; start++)
+            for (int start = 0; start < numberEntered.Length; start++)
             {
                 //TOTAL A
                 int totalStart = 0;
@@ -34,22 +33,22 @@ public class NTT_Test_No_5
 
                 for (int startCountTotalA = 0; startCountTotalA < start; startCountTotalA++)
                 {
-                    totalStart += dataArray[startCountTotalA];
+                    totalStart += numberEntered[startCountTotalA];
                     //Console.WriteLine(dataArray[startCountTotalA]);
                 }
                 //TOTAL B
-                for (int startCountTotalB = start; startCountTotalB < dataArray.Length; startCountTotalB++)
+                for (int startCountTotalB = start; startCountTotalB < numberEntered.Length; startCountTotalB++)
                 {
-                    totalEnd += dataArray[startCountTotalB];
+                    totalEnd += numberEntered[startCountTotalB];
 
                     //Console.WriteLine(dataArray[startCountTotalB]);
                 }
 
 
-                dataResult.Add(Math.Abs(totalStart - totalEnd));
-                dataDifferenceArray = dataResult.ToArray();
+                numberEnteredResult.Add(Math.Abs(totalStart - totalEnd));
+                convertedNumberEnteredResult = numberEnteredResult.ToArray();
             }
-            return dataDifferenceArray.Min();
+            return convertedNumberEnteredResult.Min();
         }
         catch (Exception ex)
         {

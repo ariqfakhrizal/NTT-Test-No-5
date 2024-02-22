@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\Target Company\\NTT Ltd\\NTT_Test_No_5\\NTT_Test_No_5.csproj",
+      "projectUniqueName": "D:\\Workspace\\Github\\NTT Ltd Pte - Github\\ProgrammingTest_No_5\\NTT-Test-No-5\\NTT_Test_No_5\\NTT_Test_No_5.csproj",
       "projectName": "NTT_Test_No_5",
-      "projectPath": "D:\\Workspace\\Target Company\\NTT Ltd\\NTT_Test_No_5\\NTT_Test_No_5.csproj",
+      "projectPath": "D:\\Workspace\\Github\\NTT Ltd Pte - Github\\ProgrammingTest_No_5\\NTT-Test-No-5\\NTT_Test_No_5\\NTT_Test_No_5.csproj",
       "packagesPath": "C:\\Users\\M. Ariq Fakhrizal\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\Target Company\\NTT Ltd\\NTT_Test_No_5\\obj\\",
+      "outputPath": "D:\\Workspace\\Github\\NTT Ltd Pte - Github\\ProgrammingTest_No_5\\NTT-Test-No-5\\NTT_Test_No_5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\M. Ariq Fakhrizal\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -4,21 +4,22 @@ namespace NTT_Test_No_5.MSTest
     public class UnitTestNo5
     {
         [TestMethod]
-        public void SoalA_functionSelisih_ReturnTrue()
+        [DataRow(new int[] { 2, 5, 3, 6 })]
+        public void SoalA_functionSelisih_ReturnTrue(int[] numberEnteredTest)
         {
-            int[] dataArray = new int[] { 2, 5, 3, 6 };
-
-            var result = NTT.NTT_Test_No_5.functionSelisih(dataArray);
-            Assert.AreEqual(2, result);
+            var actualResult = NTT.NTT_Test_No_5.functionSelisih(numberEnteredTest);
+            int expectedResult = 2;
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
         [TestMethod]
-        public void SoalB_functionSelisih_ReturnTrue()
-        {
-            int[] dataArray = new int[] { 3, 1, 2, 4, 3 };
 
-            var result = NTT.NTT_Test_No_5.functionSelisih(dataArray);
-            Assert.AreEqual(1, result);
+        [DataRow(new int[] { 3, 1, 2, 4, 3 })]
+        public void SoalB_functionSelisih_ReturnTrue(int[] numberEnteredTest)
+        {
+            var actualResult = NTT.NTT_Test_No_5.functionSelisih(numberEnteredTest);
+            int expectedResult = 1;
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
     }
